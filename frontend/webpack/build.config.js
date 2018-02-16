@@ -17,6 +17,11 @@ export default {
       ...loaders,
       {
         test: /\.css$/,
+        include: /node_modules/,
+        loader: ExtractTextPlugin.extract('style', 'css!postcss')
+      },
+      {
+        test: /\.css$/,
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract(
           'style',

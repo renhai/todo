@@ -2,5 +2,5 @@
   "development": false,
   "devTools": false,
   "host": "localhost",
-  "port": 3000
+  "port": 8080
 }

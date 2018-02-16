@@ -19,6 +19,11 @@ export default {
       ...loaders,
       {
         test: /\.css$/,
+        include: /node_modules/,
+        loader: 'style-loader!css-loader!postcss-loader'
+      },
+      {
+        test: /\.css$/,
         exclude: /node_modules/,
         loader: combine([
           {
