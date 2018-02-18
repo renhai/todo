@@ -22,11 +22,11 @@ export default class App extends React.Component {
         <div>
           <div>
             <Header />
-            <div className="section">
+            <section className="section">
               <div className="container">
                 {children}
               </div>
-            </div>
+            </section>
             <Footer />
           </div>
         </div>

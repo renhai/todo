@@ -8,18 +8,14 @@ const cx = className.bind(require('./Home.css'));
 export default class Home extends React.Component {
   render() {
     return (
-      <div>
-        <div className="columns">
-          <section className="column">
-            <section>
-              <h1 className={cx('title', 'title-color')}>
-                <FormattedMessage
-                  id="TITLE"
-                  defaultMessage={'Hai Loves React!'}
-                />
-              </h1>
-            </section>
-          </section>
+      <div className="columns">
+        <div className="column">
+          <h1 className={cx('title', 'title-color')}>
+            <FormattedMessage
+              id="TITLE"
+              defaultMessage={'Hai Loves React!'}
+            />
+          </h1>
         </div>
       </div>
     );
